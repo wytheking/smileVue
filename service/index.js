@@ -15,9 +15,15 @@ app.use(bodyParser())
 
 // 引入路由模块
 let user = require('./appApi/User.js')
+let goods = require('./appApi/Goods.js')
+let category = require('./appApi/Category.js')
+let categorySub = require('./appApi/CategorySub.js')
 // 装载子路由
 let router = new Router()
 router.use('/user', user.routes())
+router.use('/goods', goods.routes())
+router.use('/goods', category.routes())
+router.use('/goods', categorySub.routes())
 // 加载路由中间件
 app.use(router.routes())
 app.use(router.allowedMethods())

@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <van-nav-bar
-      title="用户注册"
+      title="注册"
       left-text="返回"
       left-arrow
       @click-left="goBack" />
@@ -25,7 +25,7 @@
         :error-message="passwordErrorMsg"
       />
       <div class="register-button">
-        <van-button type="primary" @click="registerAction" :loading="openLoading" size="large">马上注册</van-button>
+        <van-button type="primary" @click="registerAction" :loading="openLoading" size="large">注册</van-button>
       </div>
     </div>
   </div>
