@@ -5,9 +5,9 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 // 按需引入vant组件
-import { Button, Row, Col, Search, Swipe, SwipeItem, Lazyload, List, Field, NavBar } from 'vant'
+import { Button, Row, Col, Search, Swipe, SwipeItem, Lazyload, List, PullRefresh, NavBar, Field, Tab, Tabs, stepper, Tabbar, TabbarItem, cell } from 'vant'
 // 使用vant组件
-Vue.use(Button).use(Row).use(Col).use(Search).use(Swipe).use(SwipeItem).use(Lazyload).use(List).use(Field).use(NavBar)
+Vue.use(Button).use(Row).use(Col).use(Search).use(Swipe).use(SwipeItem).use(Lazyload).use(List).use(PullRefresh).use(Field).use(Tab).use(Tabs).use(NavBar).use(stepper).use(Tabbar).use(TabbarItem).use(cell)
 
 Vue.prototype.$http = axios
 

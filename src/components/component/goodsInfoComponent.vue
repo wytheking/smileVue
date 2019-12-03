@@ -11,7 +11,12 @@
 <script>
 import {toMoney} from '@/filter/moneyFilter.js'
 export default {
-  props: ['goodsImage', 'goodsName', 'goodsPrice', 'goodsId'],
+  props: [
+    'goodsImage',
+    'goodsName',
+    'goodsPrice',
+    'goodsId'
+  ],
   filters: {
     moneyFilter (money) {
       return toMoney(money)
